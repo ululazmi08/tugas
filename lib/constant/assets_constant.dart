@@ -7,6 +7,8 @@ class AssetConstant {
   static const imgQris = "assets/images/qris.png";
   static const imgLandmark = "assets/images/imgLandmark.png";
   static const imgItem = "assets/images/item.png";
+  static const imgHelp = "assets/images/help.png";
+  static const imgGuestBanner = "assets/images/imgGuestBanner.png";
 
   //ICON
   static const icHome = "assets/icons/ic_home.png";

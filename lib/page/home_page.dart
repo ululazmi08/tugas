@@ -104,8 +104,22 @@ class HomePage extends StatelessWidget {
                             ],
                           ),
                           Container(
-                            decoration: BoxDecoration(color: Colors.orange),
-                            child: Text('Top Up'),
+                            padding: EdgeInsets.all(1),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(4),
+                              color: Color(0xffFFF84B)
+                            ),
+                            child: Container(
+                              padding: EdgeInsets.all(8),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(4),
+                                  gradient: LinearGradient(
+                                    colors: [Color(0xffFE5F75), Color(0xffFC9842)],
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter),
+                              ),
+                              child: Text('Top Up', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w800, fontSize: 12),),
+                            ),
                           )
                         ],
                       ),
@@ -256,53 +270,6 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-            // Row(
-            //   children: [
-            //     Container(
-            //       height: 142,
-            //       padding: EdgeInsets.only(left: 32),
-            //       color: Colors.white,
-            //       child: Image.asset(
-            //         AssetConstant.imgLandmark,
-            //         height: 103,
-            //       ),
-            //     ),
-            //     // ListView.builder(
-            //     //     itemCount: 3,
-            //     //     shrinkWrap: true,
-            //     //     itemBuilder: (context, index) {
-            //     //       return Column(
-            //     //         children: [
-            //     //           Container(
-            //     //             decoration: BoxDecoration(
-            //     //                 borderRadius: BorderRadius.circular(10),
-            //     //                 color: Colors.white),
-            //     //             child: Column(
-            //     //               children: [
-            //     //                 Container(
-            //     //                   height: 99,
-            //     //                   decoration: BoxDecoration(
-            //     //                       image: DecorationImage(
-            //     //                     image: AssetImage(AssetConstant.imgItem),
-            //     //                   )),
-            //     //                 )
-            //     //               ],
-            //     //             ),
-            //     //           )
-            //     //         ],
-            //     //       );
-            //     //     })
-            //   ],
-            // ),
-            // Column(
-            //   children: [
-            //     Container(
-            //       decoration: BoxDecoration(
-            //           borderRadius: BorderRadius.circular(10),
-            //           color: Colors.white),
-            //     ),
-            //   ],
-            // ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
@@ -312,7 +279,7 @@ class HomePage extends StatelessWidget {
                     // padding: EdgeInsets.only(right: 22),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Colors.green,
+                      color: Colors.white,
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.withOpacity(0.5),
@@ -346,11 +313,12 @@ class HomePage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Container(
+                              padding: EdgeInsets.symmetric(horizontal: 4, vertical: 1),
                               margin: EdgeInsets.only(right: 8, bottom: 8),
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(100),
                                   color: Colors.orange),
-                              child: Text('Detail'),
+                              child: Text('Detail', style: TextStyle(fontSize: 7,color: Colors.white),),
                             )
                           ],
                         )
@@ -390,14 +358,14 @@ class HomePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Let’s Go with Jakarta Tourist Pass',
+                            'Events in Jakarta',
                             style: TextStyle(
                                 fontSize: 15,
                                 color: Colors.black,
                                 fontWeight: FontWeight.w700),
                           ),
                           Text(
-                            'a place not to be missed',
+                            "don't miss the current events",
                             style: TextStyle(
                                 fontSize: 12,
                                 color: Colors.black,
